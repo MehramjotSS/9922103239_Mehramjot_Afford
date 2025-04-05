@@ -1,0 +1,43 @@
+curl -X POST http://20.244.56.144/evaluation-service/register \
+  -H "Content-Type: application/json" \
+  -d '{
+    "email": "9922103239@mail.jiit.ac.in",
+    "name": "Mehramjot soei",
+    "mobileNo": "6239264156",
+    "githubUsername": "MehramjotSS",
+    "rollNo": "9922103239",
+    "collegeName": "Jaypee institute of information technology",
+    "accessCode": "SrMQqR"
+}'
+
+
+
+{"email":"9922103239@mail.jiit.ac.in","name":"mehramjot soei","rollNo":"9922103239","accessCode":"SrMQqR","clientID":"baac4708-a04f-4896-8d90-ccd833eca388","clientSecret":"qCrJcwBzmaKbcRvg"}
+
+
+curl -X POST http://20.244.56.144/evaluation-service/auth \
+  -H "Content-Type: application/json" \
+  -d '{
+    "companyName": "Mehramjot Corp",
+    "clientID": "baac4708-a04f-4896-8d90-ccd833eca388",
+    "clientSecret": "qCrJcwBzmaKbcRvg",
+    "ownerName": "Mehramjot Soei",
+    "ownerEmail": "9922103239@mail.jiit.ac.in",
+    "rollNo": "9922103239",
+    "accessCode": "SrMQqR"
+}'
+
+curl -X POST http://20.244.56.144/evaluation-service/auth \
+  -H "Content-Type: application/json" \
+  -d '{
+    "email": "9922103239@mail.jiit.ac.in",
+    "name": "Mehramjot soei",
+    "rollNo": "9922103239",
+    "accessCode": "SrMQqR",
+    "clientID": "",
+    "clientSecret": ""
+}'
+
+
+
+{"token_type":"Bearer","access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQzODI5NzM4LCJpYXQiOjE3NDM4Mjk0MzgsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImJhYWM0NzA4LWEwNGYtNDg5Ni04ZDkwLWNjZDgzM2VjYTM4OCIsInN1YiI6Ijk5MjIxMDMyMzlAbWFpbC5qaWl0LmFjLmluIn0sImVtYWlsIjoiOTkyMjEwMzIzOUBtYWlsLmppaXQuYWMuaW4iLCJuYW1lIjoibWVocmFtam90IHNvZWkiLCJyb2xsTm8iOiI5OTIyMTAzMjM5IiwiYWNjZXNzQ29kZSI6IlNyTVFxUiIsImNsaWVudElEIjoiYmFhYzQ3MDgtYTA0Zi00ODk2LThkOTAtY2NkODMzZWNhMzg4IiwiY2xpZW50U2VjcmV0IjoicUNySmN3QnptYUtiY1J2ZyJ9.R3-29Qh8kpwT7CcGeMr217DqTuFqEm-ea8wffezRv_E","expires_in":1743829738}%
